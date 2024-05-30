@@ -1,8 +1,11 @@
 from aiogram import Bot
 from aiogram.enums import ParseMode
+
+from ai.ai_manager import AIManager
 from cfg import cfg
 
 bot = Bot(token=cfg.get("token"), parse_mode=ParseMode.HTML)
+ai_manager = AIManager()
 
 FOOD_LIST = [
     {"name": "Яблуко", "cal": 52, "weight": 100},

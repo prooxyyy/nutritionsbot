@@ -5,8 +5,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from common import HEALTH_TIPS
 from db.models import User
-from factory.client_factories import MenuCallbackFactory
 from enums.enums import MenuAction, activity_level_names
+from factory.client_factories import MenuCallbackFactory
 from keyboards.client_keyboards import back_kb, main_menu_kb
 from utils.utils import generate_food_list, calculate_daily_calories
 

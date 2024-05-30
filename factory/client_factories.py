@@ -1,6 +1,6 @@
 from aiogram.filters.callback_data import CallbackData
 
-from enums.enums import Gender, ActivityLevel, MenuAction
+from enums.enums import Gender, ActivityLevel, MenuAction, AIReceptMenuAction
 
 
 class RegisterStepGenderCallbackFactory(CallbackData, prefix="register_gender"):
@@ -12,3 +12,6 @@ class RegisterStepActivityLevelCallbackFactory(CallbackData, prefix="reg_activit
 
 class MenuCallbackFactory(CallbackData, prefix="menu"):
     action: MenuAction
+
+class AIMenuCallbackFactory(CallbackData, prefix="ai_menu"):
+    action: AIReceptMenuAction

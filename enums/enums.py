@@ -22,3 +22,8 @@ class MenuAction(str, Enum):
     STATS = "my_stats"
     OPEN = "open"
     HEALTH_TIPS = "health_tips"
+    AI_RECEPT_MENU = "ai_recept"
+
+class AIReceptMenuAction(str, Enum):
+    PHOTO = "photo"
+    TEXT = "text"
